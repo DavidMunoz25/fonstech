@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="107 441 382 382">
+  <defs>
+    <linearGradient id="gL1" x1="160" y1="605" x2="220" y2="780" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#349DDE"/><stop offset="1" stop-color="#1878BB"/></linearGradient>
+    <linearGradient id="gL2" x1="220" y1="645" x2="282" y2="818" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2D7ADE"/><stop offset="1" stop-color="#1E55AE"/></linearGradient>
+    <linearGradient id="gSFr" x1="282" y1="675" x2="312" y2="815" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3982E6"/><stop offset="1" stop-color="#1F66CC"/></linearGradient>
+    <linearGradient id="gST" x1="311" y1="445" x2="380" y2="560" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#C6EFFE"/><stop offset="1" stop-color="#A2E3FC"/></linearGradient>
+    <linearGradient id="gSL" x1="160" y1="533" x2="220" y2="640" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B0E9FC"/><stop offset="1" stop-color="#7DD0F6"/></linearGradient>
+    <linearGradient id="gNW" x1="220" y1="570" x2="311" y2="590" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#9FE1FB"/><stop offset="1" stop-color="#8CD5F5"/></linearGradient>
+    <linearGradient id="gSI" x1="312" y1="520" x2="375" y2="560" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B8EAFC"/><stop offset="1" stop-color="#92DBF9"/></linearGradient>
+    <linearGradient id="gSF" x1="375" y1="551" x2="436" y2="587" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#82D3F7"/><stop offset="1" stop-color="#62BCF1"/></linearGradient>
+    <linearGradient id="gAT" x1="300" y1="560" x2="400" y2="650" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#58CEFC"/><stop offset="1" stop-color="#27AFEF"/></linearGradient>
+    <linearGradient id="gAL" x1="252" y1="590" x2="375" y2="728" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2699D6"/><stop offset="1" stop-color="#1371A6"/></linearGradient>
+    <linearGradient id="gAF" x1="375" y1="660" x2="436" y2="694" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2BAAE5"/><stop offset="1" stop-color="#1C92D0"/></linearGradient>
+  </defs>
+  <polygon points="220,640 251.7,621.7 313,657.3 281.7,675.3" fill="#2297D5"/>
+  <polygon points="160,605 220,640 220,781.3 160,746.7" fill="url(#gL1)"/>
+  <polygon points="220,640 281.7,675.3 281.7,818.3 220,781.3" fill="url(#gL2)"/>
+  <polygon points="281.7,675.3 311.7,658 311.7,801 281.7,818.3" fill="url(#gSFr)"/>
+  <polygon points="160,533.3 311.7,445 436,515 375,551 311.7,515 220,568.3" fill="url(#gST)"/>
+  <polygon points="160,533.3 220,568.3 220,640 160,605" fill="url(#gSL)"/>
+  <polygon points="220,568.3 311.7,515 311.7,586.7 220,640" fill="url(#gNW)"/>
+  <polygon points="311.7,515 375,551 375,622.7 311.7,586.7" fill="url(#gSI)"/>
+  <polygon points="375,551 436,515 436,586.7 375,622.7" fill="url(#gSF)"/>
+  <polygon points="251.7,586.7 311.7,550 436,623.3 375,657.7" fill="url(#gAT)"/>
+  <polygon points="251.7,586.7 375,657.7 375,728.3 251.7,657.3" fill="url(#gAL)"/>
+  <polygon points="375,657.7 436,623.3 436,694 375,728.3" fill="url(#gAF)"/>
+</svg>

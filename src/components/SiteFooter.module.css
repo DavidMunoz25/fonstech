@@ -1,0 +1,82 @@
+.inner {
+  max-width: var(--shell-max);
+  margin: 0 auto;
+  padding: clamp(56px, 7vw, 88px) var(--gutter) 28px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(40px, 6vw, 72px);
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about {
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 320px;
+}
+
+.aboutText {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-subtle);
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 72px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.link {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--color-accent);
+}
+
+.columnLink {
+  font-size: 16px;
+  padding: 6px 0;
+}
+
+.wordmark {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-code);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--color-text-subtle);
+}
+
+.toTop {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 12px;
+}

@@ -1,0 +1,92 @@
+:root {
+  --color-bg: #061523;
+  --color-surface: #0a1f33;
+  --color-ink: #0b1a2b;
+  --color-accent: #4fc3f7;
+  --color-accent-soft: #bfeafb;
+  --color-text: #f1f7fc;
+  --color-text-muted: #a9bdd1;
+  --color-text-subtle: #8fa7be;
+  --color-link: #c9d6e3;
+  --color-paper: #f0f0f0;
+  --color-paper-text: #071626;
+  --color-paper-muted: #3e5469;
+  --color-contact-muted: #0b2a44;
+
+  --font-display: var(--font-sora), sans-serif;
+  --font-body: var(--font-manrope), system-ui, sans-serif;
+  --font-code: var(--font-jetbrains-mono), monospace;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --shell-max: 1280px;
+  --gutter: clamp(20px, 4vw, 48px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Bloquea el scroll de fondo mientras el menú está abierto, sin salto de layout. */
+html:has(dialog[open]) {
+  overflow: hidden;
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+}
+
+/* Especificidad cero: los módulos de cada componente siempre ganan. */
+:where(a) {
+  color: var(--color-accent);
+}
+
+:where(a:hover) {
+  color: var(--color-accent-soft);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.site-root {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  overflow-x: clip;
+}
+
+/* ===== Movimiento compartido entre secciones ===== */
+@keyframes fx-up {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fx-in {
+  animation: fx-up 0.9s var(--ease-out) both;
+}
+
+/* Aparición con scroll (CSS nativo, sin JS) */
+@supports (animation-timeline: view()) {
+  .fx-reveal {
+    animation: fx-up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 22%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fx-in,
+  .fx-reveal {
+    animation: none;
+  }
+}
